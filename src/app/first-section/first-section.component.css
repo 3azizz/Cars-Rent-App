@@ -1,0 +1,114 @@
+.easily{
+    color: rgba(21, 114, 211, 1);
+
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+
+  position: relative;
+  
+}
+
+.hero-left {
+
+  width: 390px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 100%;
+  height: 82px;
+  margin-bottom: 20px;
+  width: 390px;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  width: 390px;
+}
+
+/* .hero-right img {
+  width: 20%;
+  max-width: 100%;
+  border-radius: 10px;
+} */
+
+.smallp{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  height: 40px;
+  width: 390px;
+}
+
+.container_s{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.container_s img{
+  margin-left: 3px;
+  width: 150px;
+  height: 50px;
+}
+
+.hero-right{
+  position: absolute;
+  right: 0;
+  top: 150px;
+  transform: translateY(-50%);
+  height: auto;
+}
+
+.hero-right .backframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: auto;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+
+
+
+.hero-right .car {
+  position: absolute; 
+  top: 0;        
+  right: 0;       
+  width: 700px;
+  height: auto;
+  z-index: 2;
+}
+
+/* search bar css */
+
+
+.searchcontainer{
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+ 
+}
+.input-group {
+  margin-top: 30px;
+  margin-right: 30px;
+  
+}
+
+.input-group .form-control {
+  border-radius: 5px 0 0 5px;
+}
+
+.input-group .btn {
+  border-radius: 0 5px 5px 0;
+  margin-left: 70px;
+}
