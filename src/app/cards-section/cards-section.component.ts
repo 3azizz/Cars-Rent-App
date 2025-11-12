@@ -10,14 +10,21 @@ import { Cars } from '../cars';
 })
 export class CardsSectionComponent {
 
-  cars: Cars[] =[];
 
-  constructor(private CarsDataService : CarsDataService){
-    
-    this.CarsDataService.getPosts().subscribe((res)=>{
 
-      console.log(res);
-      this.cars = res
+  cars: any[] = [];
+  imagePaths: string[] = [
+    '../../assets/Cimage2.png',
+    '../../assets/Cimage3.png',
+    '../../assets/Cimage4.png',
+    '../../assets/Cimage1.png'
+  ];
+
+  constructor(private CarsDataService: CarsDataService) {
+    this.CarsDataService.getPosts().subscribe((res) => {
+      this.cars = res.cars.slice(0, 4).map((car: any, index: number) => ({
+          ...car,image: this.imagePaths[index] 
+        }));
     });
   }
 
