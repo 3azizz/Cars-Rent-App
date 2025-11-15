@@ -11,7 +11,12 @@ import { NvbarComponent } from './nvbar/nvbar.component';
 import { FirstSectionComponent } from './first-section/first-section.component';
 import { CardsSectionComponent } from './cards-section/cards-section.component';
 import { AppDownloadComponent } from './app-download/app-download.component';
-import { FooterComponent } from './footer/footer.component';   
+import { FooterComponent } from './footer/footer.component';
+import { CarsComponent } from './cars/cars.component';
+import { ThirdSectionComponent } from './third-section/third-section.component';
+import { FourthSectionComponent } from './fourth-section/fourth-section.component';
+import { FifthSectionComponent } from './fifth-section/fifth-section.component';
+import { CarDetailsComponent } from './car-details/car-details.component';   
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { FooterComponent } from './footer/footer.component';
     FirstSectionComponent,
     CardsSectionComponent,
     AppDownloadComponent,
-    FooterComponent
+    FooterComponent,
+    CarsComponent,
+    ThirdSectionComponent,
+    FourthSectionComponent,
+    FifthSectionComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,

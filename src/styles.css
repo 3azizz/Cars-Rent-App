@@ -14,7 +14,10 @@ body {
   font-family: sans-serif;
 }
 
-
+.btncontainer{
+  margin-top: 15px;
+  margin-left: 50%;
+}
 
 
 /* **********Cards Section CSS************** */
@@ -197,12 +200,12 @@ section {
 
 .left-image {
   flex: 1;
-  min-width: 300px;
+  min-width: 100px;
 }
 
 
 .left-image img{
-  width: 813px;
+  width: 660px;
 }
 .right-content {
   flex: 1;

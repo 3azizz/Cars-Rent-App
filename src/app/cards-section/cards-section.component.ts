@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';   
 import { CarsDataService } from '../cars-data.service';
 import { Cars } from '../cars';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards-section',
@@ -20,12 +21,20 @@ export class CardsSectionComponent {
     '../../assets/Cimage1.png'
   ];
 
-  constructor(private CarsDataService: CarsDataService) {
+  constructor(private CarsDataService: CarsDataService ) {
     this.CarsDataService.getPosts().subscribe((res) => {
       this.cars = res.cars.slice(0, 4).map((car: any, index: number) => ({
           ...car,image: this.imagePaths[index] 
         }));
     });
+
+
+
+
+
   }
+
+  
+   
 
 }

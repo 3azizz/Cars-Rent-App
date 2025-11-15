@@ -18,4 +18,8 @@ export class CarsDataService {
   getPosts(): Observable<any>{
     return  this._HttpClient.get('https://myfakeapi.com/api/cars/')
   }
+
+   getPostsbyID(id?: number): Observable<any> {
+  return this._HttpClient.get(`https://myfakeapi.com/api/cars/${id}`);
+}
 }
